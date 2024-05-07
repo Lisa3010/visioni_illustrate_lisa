@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: "inter"
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 12px ;
+    align-items: center;
+}
+
+.container h1 a{
+    color: white;
+}
+
+.container{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+header{
+    background-color: black;
+    padding: 24px;
+}
+
+div.container h1{
+    font-size: 20px;
+    max-width: 1000px;
+    align-items: center;
+    width: 120px;
+    text-align: left;
+    
+}
+
+div.nav ul a{
+    color: white;
+    max-width: 1000px;
+    align-items: center;    
+}
+
+div.hero{
+    font-size: 20pt;
+    text-align: left;
+    max-width: 1000px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 48px 0 48px 0;
+}
+
+div.testi-hero{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.hero img{
+    width: 100%;
+    object-fit: cover;
+}
+
+div.testi-hero h2{
+    max-width:600px;
+}
+
+
+.data{
+    font-size: 14px;
+    text-align: left;
+    
+}
+
+.viola{
+    height: 4px;
+    background-color: #66047E;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    height: 100%;
+    margin: auto;
+    padding: 24px ;
+}
+
+div.footer{    
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.container-card{
+    width: 100%;
+    display: grid;     
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-rows: 1fr 1fr 1fr;     
+    column-gap: 24px;     
+    row-gap: 12px;
+    margin: auto;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.card a{
+    text-align: center;
+    background-color: #66047E;
+    border-radius: 16px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    color: white;
+    margin-bottom: 24px;
+    text-decoration: none;
+}
+
+.card img{
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 12px ;
+}
+
+.card h5{
+    margin: auto;
+    font-size: 18px;
+}
+
+.title{
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+div.h4{
+    font-size: 20px;
+    align-items: center;
+    width: 120px; 
+    text-align: left; 
+}
+ ul a{
+    color: white;
+    align-items: center;
+}
+
+h6{
+    font-size: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.pagina{
+    padding: 24px;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.paragrafi p{
+    font-size: 15px;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 24px
+}
+
+.mostra{
+    padding: 24px;
+}
+
+.par-img{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 128px;
+}
+
+.par-img img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.testo p{
+ margin-bottom: 24px;
+}
+
+.opere{
+    column-count: 3;
+    max-width: 1000px;
+    margin: auto;
+    padding: 56px 0 56px 0;
+}
+
+.opere img{
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.opere img:hover{
+    transition: .2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.artista h6{
+    font-size: 48px;
+    align-items: center;
+    text-align: left;
+}
+
+
+.artista{
+    max-width: 1000px;
+    display: grid;
+    margin: auto;
+    justify-content: start;
+    gap: 48px; 
+}
+
+
+
+@media(max-width:850px){
+    .par-img{
+        grid-template-columns: 1fr;
+    }
+    .container-card{
+        grid-template-columns: 1fr 1fr;
+    }
+    .opere{
+        column-count: 2;
+        max-width: 750px;
+    }
+}
+
+@media(max-width:550px){
+    .container-card{
+        grid-template-columns: 1fr;
+    }
+    .opere{
+        column-count: 1;
+        max-width: 450px;
+    }
+
+    .par-img img{
+        grid-row: 1;
+    }
+
+    .par-img{
+        gap: 64px;
+    }
+
+    div.hero{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        
+    }
+}
